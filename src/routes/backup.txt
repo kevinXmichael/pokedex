@@ -1,0 +1,7 @@
+	const addPokedex = (id) => {
+		let poke = todos.find((poke) => poke.id == id);
+		capturados = [...capturados, poke];
+		todos = todos.filter((poke) => poke.id != id);
+		console.log(`capturados`, capturados);
+	};
+	console.log($pokedex);
